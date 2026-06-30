@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Analisis Pengunjung Curug Niagara Bogor</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            🌿 Curug Niagara
+        </div>
+
+        <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#data">Data Pengunjung</a></li>
+    <li><a href="#grafik">Statistik</a></li>
+    <li><a href="#galeri">Galeri</a></li>
+</ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="overlay">
+            <h1>CURUG NIAGARA BOGOR</h1>
+            <p>Sistem Analisis Pengunjung Wisata</p>
+
+            <button id="btnData">
+                Lihat Data
+            </button>
+
+        </div>
+    </header>
+
+    <!-- Informasi -->
+    <section class="info">
+
+        <h2>Tentang Curug Niagara</h2>
+
+        <p>
+            Curug Niagara merupakan salah satu destinasi wisata alam yang berada di Bogor.
+            Website ini dibuat untuk menganalisis jumlah pengunjung menggunakan metode
+            statistik deskriptif berupa Mean, Median, dan Modus.
+        </p>
+
+        <div class="info-card">
+
+            <div class="card">
+                <h3>📅 Tanggal</h3>
+                <p id="tanggal"></p>
+            </div>
+
+            <div class="card">
+                <h3>🕒 Jam</h3>
+                <p id="jam"></p>
+            </div>
+
+            <div class="card">
+                <h3>📍 Lokasi</h3>
+                <p>Bogor, Jawa Barat</p>
+            </div>
+
+            <div class="card">
+                <h3>🌤️ Cuaca</h3>
+                <p>Cerah • 25°C</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Data Pengunjung -->
+    <section class="data" id="data">
+
+        <h2>📊 Data Pengunjung 30 Hari</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Hari</th>
+
+                    <th>Jumlah Pengunjung</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tabelPengunjung">
+
+            </tbody>
+
+        </table>
+
+        <br>
+
+        <button id="btnHitung">
+
+            Hitung Statistik
+
+        </button>
+
+        <section class="hasil">
+
+    <div class="hasil-card">
+        <h3>Mean</h3>
+        <p id="mean">-</p>
+    </div>
+
+    <div class="hasil-card">
+        <h3>Median</h3>
+        <p id="median">-</p>
+    </div>
+
+    <div class="hasil-card">
+        <h3>Modus</h3>
+        <p id="modus">-</p>
+    </div>
+
+</section>
+
+    <h2 id="grafik" style="margin-top:50px;">📈 Grafik Pengunjung</h2>
+
+<canvas id="grafikPengunjung"></canvas>
+    </section>
+
+    <script src="script.js"></script>
+
+    <section class="galeri" id="galeri">
+
+    <h2>📸 Galeri Curug Niagara</h2>
+
+    <div class="galeri-container">
+
+        <img src="img/curug1.jpg" alt="Curug Niagara">
+
+        <img src="img/curug2.jpg" alt="Curug Niagara">
+
+        <img src="img/curug3.jpg" alt="Curug Niagara">
+
+    </div>
+
+</section>
+
+    <footer>
+
+    <h2>Sistem Analisis Pengunjung Wisata</h2>
+
+    <p>Mata Kuliah : Riset Operasional</p>
+
+    <br>
+
+    <p><strong>Disusun Oleh :</strong></p>
+
+    <p>Rindu Febrianty</p>
+    <p>109230940150</p>
+
+    <br>
+
+    <p>Renaldi</p>
+    <p>109230940057</p>
+
+    <br>
+
+    <p>&copy; 2026 Sistem Analisis Pengunjung Curug Niagara Bogor</p>
+
+</footer>
+
+</body>
+</html>

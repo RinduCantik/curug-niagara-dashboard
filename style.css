@@ -1,0 +1,381 @@
+html{
+    scroll-behavior:smooth;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef8ef;
+    color:#333;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    background:#0b7dda;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    background:url("img/banner.jpg") center center/cover no-repeat;
+    height:500px;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+}
+
+.overlay h1{
+    font-size:50px;
+}
+
+.overlay p{
+    font-size:22px;
+    margin:15px;
+}
+
+.overlay button{
+
+    padding:13px 28px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#28a745;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+}
+
+.overlay button:hover{
+
+    background:#0056b3;
+
+}
+
+/* ================= INFO ================= */
+
+.info{
+
+    padding:60px 10%;
+
+    text-align:center;
+
+}
+
+.info h2{
+
+    color:#0b7dda;
+
+    margin-bottom:20px;
+
+}
+
+.info p{
+
+    line-height:1.8;
+
+}
+
+.info-card{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.card{
+
+    width:220px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+
+}
+
+.card h3{
+
+    margin-bottom:10px;
+
+}
+
+/* ================= DATA ================= */
+
+.data{
+
+    padding:60px 10%;
+
+    text-align:center;
+
+}
+
+.data h2{
+
+    color:#0b7dda;
+
+    margin-bottom:30px;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+
+}
+
+th{
+
+    background:#0b7dda;
+
+    color:white;
+
+    padding:15px;
+
+}
+
+td{
+
+    padding:12px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+tr:hover{
+
+    background:#f4f4f4;
+
+}
+
+#btnHitung{
+
+    margin-top:25px;
+
+    padding:13px 28px;
+
+    border:none;
+
+    background:#28a745;
+
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+#btnHitung:hover{
+
+    background:#0056b3;
+
+}
+
+/* ================= HASIL ================= */
+
+.hasil{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:35px;
+    flex-wrap:wrap;
+
+    opacity:0;
+    transform:translateY(30px);
+    transition:all .8s ease;
+}
+
+.hasil.muncul{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.hasil-card{
+    width:220px;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.hasil-card h3{
+    color:#0b7dda;
+    margin-bottom:10px;
+}
+
+.hasil-card p{
+    font-size:30px;
+    font-weight:bold;
+    color:#28a745;
+}
+
+canvas{
+
+    margin-top:30px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    margin-top:70px;
+
+    background:#0b7dda;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+footer h2{
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    margin:5px;
+
+}
+
+/* ================= GALERI ================= */
+
+.galeri{
+
+    padding:60px 10%;
+
+    text-align:center;
+
+}
+
+.galeri h2{
+
+    color:#0b7dda;
+
+    margin-bottom:30px;
+
+}
+
+.galeri-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.galeri-container img{
+
+    width:300px;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.2);
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.galeri-container img:hover{
+
+    transform:scale(1.05);
+
+}
